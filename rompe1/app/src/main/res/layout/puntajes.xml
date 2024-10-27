@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fondo">
+
+    <!-- Título de la pantalla de records -->
+    <TextView
+        android:id="@+id/tvRecordTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Mejores Puntajes"
+        android:textSize="40sp"
+        android:textStyle="bold"
+        android:textColor="#FFFFFF"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"/>
+
+    <!-- Tabla de records -->
+    <TableLayout
+        android:id="@+id/tlHighScores"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvRecordTitle"
+        android:layout_marginTop="30dp"
+        android:padding="16dp">
+
+        <!-- Encabezado de la tabla -->
+        <TableRow>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Posición"
+                android:textSize="20sp"
+                android:textColor="#FFFFFF"
+                android:textStyle="bold"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Nombre"
+                android:textSize="20sp"
+                android:textColor="#FFFFFF"
+                android:textStyle="bold"
+                android:paddingLeft="20dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Puntaje"
+                android:textSize="20sp"
+                android:textColor="#FFFFFF"
+                android:textStyle="bold"
+                android:paddingLeft="20dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Tiempo"
+                android:textSize="20sp"
+                android:textColor="#FFFFFF"
+                android:textStyle="bold"
+                android:paddingLeft="20dp"/>
+        </TableRow>
+
+        <!-- Ejemplo de fila con un record -->
+        <TableRow>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1"
+                android:textSize="18sp"
+                android:textColor="#FFFFFF"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Juan"
+                android:textSize="18sp"
+                android:textColor="#FFFFFF"
+                android:paddingLeft="20dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="2500"
+                android:textSize="18sp"
+                android:textColor="#FFFFFF"
+                android:paddingLeft="20dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="02:30"
+                android:textSize="18sp"
+                android:textColor="#FFFFFF"
+                android:paddingLeft="20dp"/>
+        </TableRow>
+
+        <!-- Agrega más filas para más records -->
+
+    </TableLayout>
+
+    <!-- Botón para volver al menú principal -->
+    <Button
+        android:id="@+id/btnBackToMenu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Volver al Menú"
+        android:textSize="20sp"
+        android:textColor="#FFFFFF"
+        android:backgroundTint="#92417B"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="30dp"/>
+</RelativeLayout>

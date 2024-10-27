@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+
+    android:background="@drawable/fondo"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/tvGameTitle"
+        android:layout_width="290dp"
+        android:layout_height="wrap_content"
+        android:text="SELECCIONE EL MODO DE JUEGO"
+        android:textAlignment="center"
+        android:textSize="40sp"
+        android:textStyle="bold"
+        android:textColor="#D0BDF2"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="130dp"/>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:textAlignment="center"
+        android:id="@+id/botones"
+        android:layout_centerVertical="true"
+        android:layout_below="@id/tvGameTitle"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp">
+
+        <Button
+            android:id="@+id/btNuevatPart"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Facil"
+
+            android:textSize="23sp"
+            android:textColor="#FFFFFF"
+
+            android:backgroundTint="#92417B"
+            android:layout_marginRight="10dp"/>
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="20dp"/>
+        <Button
+            android:id="@+id/btContPart"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Medio"
+            android:textSize="23sp"
+            android:textColor="#FFFFFF"
+            android:backgroundTint="#6886F0"/>
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="20dp"/>
+        <Button
+            android:id="@+id/btRecord"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Dificil"
+            android:textSize="23sp"
+            android:textColor="#FFFFFF"
+            android:backgroundTint="#6A3EA6"/>
+    </LinearLayout>
+
+</RelativeLayout>

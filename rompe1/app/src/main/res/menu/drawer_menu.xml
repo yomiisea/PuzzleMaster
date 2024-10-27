@@ -1,0 +1,26 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/fondo"
+    tools:showIn="navigation_view">>
+
+    <item
+        android:id="@+id/nav_home"
+        android:icon="@drawable/home"
+        android:title="Inicio"/>
+    <item
+        android:id="@+id/nav_mode_numbers"
+        android:icon="@drawable/num"
+        android:title="Modo Números"/>
+    <item
+        android:id="@+id/nav_mode_img"
+        android:icon="@drawable/romp"
+        android:title="Modo Imagenes"/>
+    <item
+        android:id="@+id/nav_mode_versus"
+        android:icon="@drawable/romp"
+        android:title="Modo Versus"/>
+    <item
+        android:id="@+id/nav_chart"
+        android:icon="@drawable/chart"
+        android:title="Puntajes"/>
+</menu>

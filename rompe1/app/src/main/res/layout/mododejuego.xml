@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+
+    android:background="@drawable/fondo"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/Logomodo"
+        android:layout_width="430dp"
+        android:layout_height="410dp"
+        android:layout_marginTop="80dp"
+
+        android:foregroundGravity="center_horizontal"
+        android:src="@drawable/modo" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:id="@+id/botones"
+        android:gravity="center"
+        android:layout_centerVertical="true"
+        android:layout_below="@id/Logomodo"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp">
+
+        <Button
+            android:id="@+id/btPartImg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="PARTIDA IMAGEN"
+
+            android:textSize="28dp"
+            android:textColor="#FFFFFF"
+
+            android:backgroundTint="#AD368B"
+            />
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="20dp"/>
+        <Button
+            android:id="@+id/btPartNum"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="PARTIDA NUMEROS"
+            android:textSize="25dp"
+            android:textColor="#FFFFFF"
+            android:backgroundTint="#6886F0"/>
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="20dp"/>
+        <Button
+            android:id="@+id/btVersus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:text="VERSUS"
+            android:textSize="25dp"
+            android:textColor="#FFFFFF"
+            android:backgroundTint="#52157E"/>
+
+    </LinearLayout>
+
+</RelativeLayout>
